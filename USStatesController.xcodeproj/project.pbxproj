@@ -9,22 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F03D62A1927C83200CF0DB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F03D6291927C83200CF0DB8 /* Cocoa.framework */; };
 		5F03D6341927C83200CF0DB8 /* USStatesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F03D6331927C83200CF0DB8 /* USStatesController.m */; };
-		5F03D63B1927C83200CF0DB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F03D63A1927C83200CF0DB8 /* XCTest.framework */; };
-		5F03D63C1927C83200CF0DB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F03D6291927C83200CF0DB8 /* Cocoa.framework */; };
-		5F03D63F1927C83200CF0DB8 /* libUSStatesController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F03D6261927C83200CF0DB8 /* libUSStatesController.a */; };
-		5F03D6451927C83200CF0DB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F03D6431927C83200CF0DB8 /* InfoPlist.strings */; };
-		5F03D6471927C83200CF0DB8 /* USStatesControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F03D6461927C83200CF0DB8 /* USStatesControllerTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5F03D63D1927C83200CF0DB8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5F03D61E1927C83200CF0DB8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5F03D6251927C83200CF0DB8;
-			remoteInfo = USStatesController;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5F03D6261927C83200CF0DB8 /* libUSStatesController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUSStatesController.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,11 +20,8 @@
 		5F03D6311927C83200CF0DB8 /* USStatesController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USStatesController-Prefix.pch"; sourceTree = "<group>"; };
 		5F03D6321927C83200CF0DB8 /* USStatesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = USStatesController.h; sourceTree = "<group>"; };
 		5F03D6331927C83200CF0DB8 /* USStatesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USStatesController.m; sourceTree = "<group>"; };
-		5F03D6391927C83200CF0DB8 /* USStatesControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USStatesControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F03D63A1927C83200CF0DB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5F03D6421927C83200CF0DB8 /* USStatesControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "USStatesControllerTests-Info.plist"; sourceTree = "<group>"; };
-		5F03D6441927C83200CF0DB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5F03D6461927C83200CF0DB8 /* USStatesControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = USStatesControllerTests.m; sourceTree = "<group>"; };
+		5F03D6501927C84B00CF0DB8 /* USStateAbbreviations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = USStateAbbreviations.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,16 +33,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F03D6361927C83200CF0DB8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F03D63C1927C83200CF0DB8 /* Cocoa.framework in Frameworks */,
-				5F03D63F1927C83200CF0DB8 /* libUSStatesController.a in Frameworks */,
-				5F03D63B1927C83200CF0DB8 /* XCTest.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,7 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				5F03D62F1927C83200CF0DB8 /* USStatesController */,
-				5F03D6401927C83200CF0DB8 /* USStatesControllerTests */,
 				5F03D6281927C83200CF0DB8 /* Frameworks */,
 				5F03D6271927C83200CF0DB8 /* Products */,
 			);
@@ -78,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				5F03D6261927C83200CF0DB8 /* libUSStatesController.a */,
-				5F03D6391927C83200CF0DB8 /* USStatesControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,25 +86,8 @@
 		5F03D6301927C83200CF0DB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5F03D6501927C84B00CF0DB8 /* USStateAbbreviations.plist */,
 				5F03D6311927C83200CF0DB8 /* USStatesController-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5F03D6401927C83200CF0DB8 /* USStatesControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				5F03D6461927C83200CF0DB8 /* USStatesControllerTests.m */,
-				5F03D6411927C83200CF0DB8 /* Supporting Files */,
-			);
-			path = USStatesControllerTests;
-			sourceTree = "<group>";
-		};
-		5F03D6411927C83200CF0DB8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5F03D6421927C83200CF0DB8 /* USStatesControllerTests-Info.plist */,
-				5F03D6431927C83200CF0DB8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,24 +122,6 @@
 			productReference = 5F03D6261927C83200CF0DB8 /* libUSStatesController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		5F03D6381927C83200CF0DB8 /* USStatesControllerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5F03D64D1927C83200CF0DB8 /* Build configuration list for PBXNativeTarget "USStatesControllerTests" */;
-			buildPhases = (
-				5F03D6351927C83200CF0DB8 /* Sources */,
-				5F03D6361927C83200CF0DB8 /* Frameworks */,
-				5F03D6371927C83200CF0DB8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F03D63E1927C83200CF0DB8 /* PBXTargetDependency */,
-			);
-			name = USStatesControllerTests;
-			productName = USStatesControllerTests;
-			productReference = 5F03D6391927C83200CF0DB8 /* USStatesControllerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,21 +144,9 @@
 			projectRoot = "";
 			targets = (
 				5F03D6251927C83200CF0DB8 /* USStatesController */,
-				5F03D6381927C83200CF0DB8 /* USStatesControllerTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		5F03D6371927C83200CF0DB8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F03D6451927C83200CF0DB8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F03D6221927C83200CF0DB8 /* Sources */ = {
@@ -234,34 +157,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F03D6351927C83200CF0DB8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5F03D6471927C83200CF0DB8 /* USStatesControllerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5F03D63E1927C83200CF0DB8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5F03D6251927C83200CF0DB8 /* USStatesController */;
-			targetProxy = 5F03D63D1927C83200CF0DB8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5F03D6431927C83200CF0DB8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F03D6441927C83200CF0DB8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5F03D6481927C83200CF0DB8 /* Debug */ = {
@@ -352,42 +248,6 @@
 			};
 			name = Release;
 		};
-		5F03D64E1927C83200CF0DB8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "USStatesController/USStatesController-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "USStatesControllerTests/USStatesControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		5F03D64F1927C83200CF0DB8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "USStatesController/USStatesController-Prefix.pch";
-				INFOPLIST_FILE = "USStatesControllerTests/USStatesControllerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -405,14 +265,6 @@
 			buildConfigurations = (
 				5F03D64B1927C83200CF0DB8 /* Debug */,
 				5F03D64C1927C83200CF0DB8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		5F03D64D1927C83200CF0DB8 /* Build configuration list for PBXNativeTarget "USStatesControllerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5F03D64E1927C83200CF0DB8 /* Debug */,
-				5F03D64F1927C83200CF0DB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

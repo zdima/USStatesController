@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface USStatesController : NSObject
+@interface USStatesController : NSArrayController
+
+@property BOOL abbreviations;
+@property BOOL allowEmpty;
 
 @end
