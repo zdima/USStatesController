@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'USStatesController'
-  s.version      = '0.1'
+  s.version      = '0.0.1'
   s.license      =  'MIT'
   s.homepage     = 'httpis://github.com/zdima/USStatesController'
   s.authors      = { "Dmitriy Zakharkin" => "mail@zdima.net" }
